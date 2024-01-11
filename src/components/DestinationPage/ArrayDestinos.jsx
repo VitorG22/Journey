@@ -5,7 +5,7 @@ export const ArrayDestinos = [
         "distanceMeasure": "KM",
         "travelTimeNum": 3,
         "travelTimeMeasure": "Days",
-        "imagePath": "src/assets/destination/image-moon.png",
+        "imagePath": "../src/assets/imgs/destination/image-moon.png",
         "descipition": "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites."
     },
     
@@ -15,7 +15,7 @@ export const ArrayDestinos = [
         "distanceMeasure": "MIL. KM",
         "travelTimeNum": 9,
         "travelTimeMeasure": "Months",
-        "imagePath": "src/assets/destination/image-mars.png",
+        "imagePath": "../src/assets/imgs/destination/image-mars.png",
         "descipition": "Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!"
     },
     
@@ -25,7 +25,7 @@ export const ArrayDestinos = [
         "distanceMeasure": "MIL. KM",
         "travelTimeNum": 3,
         "travelTimeMeasure": "Years",
-        "imagePath": "src/assets/destination/image-europa.png",
+        "imagePath": "../src/assets/imgs/destination/image-europa.png",
         "descipition": "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin."
     },
 
@@ -35,7 +35,7 @@ export const ArrayDestinos = [
         "distanceMeasure": "BIL.KM",
         "travelTimeNum": 7,
         "travelTimeMeasure": "Years",
-        "imagePath": "src/assets/destination/image-titan.png",
+        "imagePath": "../src/assets/imgs/destination/image-titan.png",
         "descipition": "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn."
     },
 

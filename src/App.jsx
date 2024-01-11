@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from 'react'
 import './App.css'
 import { Header } from './components/NavBar/Header'
@@ -12,8 +13,8 @@ function App() {
     <>
       <Background >
         <Header />
-        <Destination />
-        {/* <HomePage/> */}
+        {/* <Destination /> */}
+        <HomePage/>
       </Background>
 
     </>
