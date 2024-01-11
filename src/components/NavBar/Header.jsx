@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
 
-
 export function Header() {
     const [hamburgerIsOpen, setHamburgerIsOpen ] = useState(false)
 
@@ -9,14 +8,14 @@ export function Header() {
         <>
 
             <nav class=" flex flex-row justify-between p-4   items-center ">
-                <img class="h-7 w-7" src="..\src\assets\imgs\shared\logo.svg" alt="" srcset="" />
+                <img class="h-7 w-7" src="Journey-To-Space/src/assets/shared/logo.svg" alt="" srcset="" />
                 <details class="z-30" >
                     <summary class="inline " onClick={() => setHamburgerIsOpen(!hamburgerIsOpen)}>
                         {hamburgerIsOpen ? (
 
-                            <img class="h-4 w-4 " src="..\src\assets\imgs\shared\icon-close.svg" />
+                            <img class="h-4 w-4 " src="Journey-To-Space\src\assets\shared\icon-close.svg" />
                         ):(
-                            <img class="h-4 w-4 " src="..\src\assets\imgs\shared\icon-hamburger.svg" />
+                            <img class="h-4 w-4 " src="Journey-To-Space\src\assets\shared\icon-hamburger.svg" />
                         )}
                     </summary>
                     <ul class=" absolute top-0 right-0 h-full w-32 -z-10 pt-16  gap-1 bg-slate-950/80 backdrop-blur-[5px] flex flex-col items-end">

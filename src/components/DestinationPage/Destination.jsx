@@ -1,5 +1,4 @@
 import React from "react";
-import { Background } from "../background/Background";
 import { BottomGradient } from "../background/BottomGradient";
 import { ArrayDestinos } from "./ArrayDestinos"; 
 

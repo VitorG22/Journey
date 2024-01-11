@@ -13,8 +13,8 @@ function App() {
     <>
       <Background >
         <Header />
-        {/* <Destination /> */}
-        <HomePage/>
+        <Destination />
+        {/* <HomePage/> */}
       </Background>
 
     </>
