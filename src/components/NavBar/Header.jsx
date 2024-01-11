@@ -13,9 +13,9 @@ export function Header() {
                     <summary class="inline " onClick={() => setHamburgerIsOpen(!hamburgerIsOpen)}>
                         {hamburgerIsOpen ? (
 
-                            <img class="h-4 w-4 " src="Journey-To-Space\src\assets\shared\icon-close.svg" />
+                            <img class="h-4 w-4 " src=".\src\assets\shared\icon-close.svg" />
                         ):(
-                            <img class="h-4 w-4 " src="Journey-To-Space\src\assets\shared\icon-hamburger.svg" />
+                            <img class="h-4 w-4 " src="./Journey-To-Space\src\assets\shared\icon-hamburger.svg" />
                         )}
                     </summary>
                     <ul class=" absolute top-0 right-0 h-full w-32 -z-10 pt-16  gap-1 bg-slate-950/80 backdrop-blur-[5px] flex flex-col items-end">
