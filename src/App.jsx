@@ -5,6 +5,7 @@ import { Header } from './components/NavBar/Header'
 import { HomePage } from './components/HomePage/homePage'
 import { Destination } from './components/DestinationPage/Destination'
 import { Background } from './components/background/Background'
+import { Crew } from './components/CrewPage/Crew'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,7 +14,8 @@ function App() {
     <>
       <Background >
         <Header />
-        <Destination />
+        <Crew/>
+        {/* <Destination /> */}
         {/* <HomePage/> */}
       </Background>
 
