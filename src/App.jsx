@@ -17,13 +17,13 @@ function App() {
   const [pageSelected, setPageSelected] = useState("home")
 
   return (
-    <AppContext.Provider value={{setPageSelected}}>
+    <AppContext.Provider value={{setPageSelected , pageSelected}}>
       <Background backgroundURL={Pages[pageSelected].background} >
         <Modal>
           <NameComponent>Ola!</NameComponent>
-          <DescripitionComponent>Esta pagina ainda esta em processo de criação, é possivel que ocorram erros ou bugs</DescripitionComponent>
-          <DescripitionComponent>É aconselhavel a visualização da pagina em Dispositivos moveis, pois sua versão para Desktop ainda não foi implementada   </DescripitionComponent>
-          <DescripitionComponent>Tenha uma otima jornada!</DescripitionComponent>
+          <DescripitionComponent><span class='text-amber-300 font-semibold'>Esta pagina ainda esta em processo de criação</span>, é possivel que ocorram <span class='text-red-400 font-semibold'>erros</span> ou <span class='text-red-400 font-semibold'>bugs</span></DescripitionComponent>
+          <DescripitionComponent>É aconselhavel a visualização da pagina em <span class='text-sky-300 font-semibold'>Dispositivos moveis</span>, pois sua versão para Desktop ainda não foi implementada   </DescripitionComponent>
+          <DescripitionComponent><span class='text-sky-300 font-semibold'>Tenha uma otima jornada!</span></DescripitionComponent>
         </Modal>
         <Header/>
         {Pages[pageSelected].page}
