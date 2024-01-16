@@ -5,7 +5,7 @@ import { SectionContainer } from '../other/SectionContainer'
 import { ArrayCrew } from './ArrayCrew'
 import { NameComponent } from '../other/NameComponent'
 import { DescripitionComponent } from '../other/DesciprtionComponent'
-import { SelecCrewButtons } from './SelectCrewButtons'
+import { SelectButtons } from '../other/SelectButtons'
 import { BottomGradient } from '../background/BottomGradient'
 import { animateReset } from '../other/animationReset'
 
@@ -22,7 +22,7 @@ export function Crew() {
                                 animateReset("crewText", "from-right", 200)
                                 animateReset("crewImage", "fade-in", 0, 600)
                             }}
-                        ><SelecCrewButtons num={index} setCrewSelectedPerson={setCrewSelectedPerson} defaultChecked={crewSelectedPerson == index ? true : false} /></li>
+                        ><SelectButtons num={index} setSelectedButton={setCrewSelectedPerson} defaultChecked={crewSelectedPerson == index ? true : false} /></li>
                         )
                     })}
                 </ul>

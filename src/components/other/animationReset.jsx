@@ -3,9 +3,9 @@ export function animateReset(idDoElemento, animationName, delaySum, delayStart) 
 
     var delay = 1
 
-    ArrayDeElementos.forEach(element => {
-        element.classList.add("hidden") 
-    })
+        ArrayDeElementos.forEach(element => {
+            element.classList.add("hidden") 
+        })
 
     setTimeout(() => {
         ArrayDeElementos.forEach(element => {

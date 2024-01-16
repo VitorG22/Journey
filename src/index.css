@@ -21,6 +21,21 @@
 
 /* ----------------------------------- */
 
+.fade-out {
+    animation: fade-out normal ease 2s;
+}
+
+@keyFrames fade-out {
+    0% {
+    }
+    
+    100% {
+        opacity: 0;
+    }
+}
+
+/* ----------------------------------- */
+
 .from-left {
     animation: from-left normal ease 1s;
 }

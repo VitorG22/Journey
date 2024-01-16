@@ -19,7 +19,7 @@ function App() {
   return (
     <AppContext.Provider value={{setPageSelected , pageSelected}}>
       <Background backgroundURL={Pages[pageSelected].background} >
-        <Modal>
+        <Modal idDoModal = "alertModal">
           <NameComponent>Hello!</NameComponent>
           <DescripitionComponent><span class='text-amber-300 font-semibold'>This page is still in the process of being created</span>, <span class='text-red-400 font-semibold'>errors</span> or <span class='text-red-400 font-semibold'>bugs </span>may occur</DescripitionComponent>
           <DescripitionComponent>It is advisable to view the page in <span class='text-sky-300 font-semibold'>Mobile devices</span>, because its Desktop version has not yet been implemented </DescripitionComponent>
