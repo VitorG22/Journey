@@ -20,10 +20,10 @@ function App() {
     <AppContext.Provider value={{setPageSelected , pageSelected}}>
       <Background backgroundURL={Pages[pageSelected].background} >
         <Modal>
-          <NameComponent>Ola!</NameComponent>
-          <DescripitionComponent><span class='text-amber-300 font-semibold'>Esta pagina ainda esta em processo de criação</span>, é possivel que ocorram <span class='text-red-400 font-semibold'>erros</span> ou <span class='text-red-400 font-semibold'>bugs</span></DescripitionComponent>
-          <DescripitionComponent>É aconselhavel a visualização da pagina em <span class='text-sky-300 font-semibold'>Dispositivos moveis</span>, pois sua versão para Desktop ainda não foi implementada   </DescripitionComponent>
-          <DescripitionComponent><span class='text-sky-300 font-semibold'>Tenha uma otima jornada!</span></DescripitionComponent>
+          <NameComponent>Hello!</NameComponent>
+          <DescripitionComponent><span class='text-amber-300 font-semibold'>This page is still in the process of being created</span>, <span class='text-red-400 font-semibold'>errors</span> or <span class='text-red-400 font-semibold'>bugs </span>may occur</DescripitionComponent>
+          <DescripitionComponent>It is advisable to view the page in <span class='text-sky-300 font-semibold'>Mobile devices</span>, because its Desktop version has not yet been implemented </DescripitionComponent>
+          <DescripitionComponent><span class='text-sky-300 font-semibold'>Have a great journey!</span></DescripitionComponent>
         </Modal>
         <Header/>
         {Pages[pageSelected].page}
