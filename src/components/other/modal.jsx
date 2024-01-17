@@ -14,5 +14,4 @@ export function Modal(props){
 function closeModal(idDoModal){
     var element = document.getElementById(idDoModal)
     element.parentElement.removeChild(element)
-    // event.target.offsetParent.offsetParent.style = "visibility : hidden"
 }

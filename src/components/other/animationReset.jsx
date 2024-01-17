@@ -4,7 +4,7 @@ export function animateReset(idDoElemento, animationName, delaySum, delayStart) 
     var delay = 1
 
         ArrayDeElementos.forEach(element => {
-            element.classList.add("hidden") 
+            element.classList.add("opacity-0") 
         })
 
     setTimeout(() => {
@@ -14,10 +14,10 @@ export function animateReset(idDoElemento, animationName, delaySum, delayStart) 
 
             setTimeout(() => {
                 element.classList.add(animationName)
-                element.classList.remove("hidden")
-                console.log("ola")
+                element.classList.remove("opacity-0")
             }, delay)
 
+            
         })
     },delayStart);
 

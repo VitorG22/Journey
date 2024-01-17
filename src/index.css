@@ -1,7 +1,8 @@
-.linear-mask-image{
-    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+.linear-mask-image {
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+    mask-image: linear-gradient(to bottom , rgb(0, 0, 0)50%, rgba(0, 0, 0, 0));
 }
+
 /* ----------------------------------- */
 
 
@@ -26,9 +27,8 @@
 }
 
 @keyFrames fade-out {
-    0% {
-    }
-    
+    0% {}
+
     100% {
         opacity: 0;
     }
@@ -46,7 +46,7 @@
         opacity: 0;
         transform: translateX(-2rem);
     }
-    
+
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -65,7 +65,7 @@
         opacity: 0;
         transform: translateX(2rem);
     }
-    
+
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -85,11 +85,12 @@
         opacity: 0;
         transform: translateX(4rem);
     }
-    70%{
+
+    70% {
         transform: translateX(-1rem);
-        
+
     }
-    
+
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -108,7 +109,7 @@
         opacity: 0;
         transform: translateY(2rem);
     }
-    
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -119,7 +120,7 @@
 
 .from-top {
     animation: from-top normal ease 1s;
-    
+
 }
 
 
@@ -128,9 +129,23 @@
         opacity: 0;
         transform: translateY(-2rem);
     }
-    
+
     100% {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* ----------------SCROLLBAR-------------- */
+
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
 }
