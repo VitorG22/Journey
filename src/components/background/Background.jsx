@@ -2,7 +2,6 @@ import React from 'react'
 
 
 export function Background(props) {
-    console.log(props)
     return (
         <>
             {/* <img  class=" absolute top-0 left-0 w-full h-full -z-10" src={`src/assets/${path}.jpg`} alt="" srcset="" /> */}

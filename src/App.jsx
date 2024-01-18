@@ -19,7 +19,6 @@ function App() {
 
   window.addEventListener('resize', function () {
     setWindowWidht(WindowResize())
-    console.log(windowWidht)
   })
 
   function WindowResize() {
@@ -28,16 +27,13 @@ function App() {
     
     switch (true) {
       case windowWidht >= 768:
-        console.log("desktop")
         return "desktop"
         break;
       case windowWidht >= 640:
-        console.log("tablet")
         return "tablet"
         break;
 
       default:
-        console.log("mobile")
         return "mobile"
         break;
 
@@ -46,7 +42,6 @@ function App() {
 
   
   const [pageSelected, setPageSelected] = useState("home")
-  console.log(Pages[pageSelected].background[windowWidht])
 
   return (
     <AppContext.Provider value={{ setPageSelected, pageSelected, windowWidht }}>
