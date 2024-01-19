@@ -15,12 +15,12 @@ export function Destination() {
     const [view3DObjects, setView3DObjects] = useState(false)
     const { windowWidht } = useContext(AppContext)
 
-    setTimeout(() => {
+    useEffect(() => {
         animateReset("destinationText", "from-bottom", 200)
         animateReset("destinationNums", "from-bottom", 0, 700)
         animateReset("destinationNames", "fade-in", 0)
 
-    }, 1)
+    }, [])
 
 
     useEffect(() => {
@@ -83,7 +83,7 @@ export function Destination() {
                                         <button onClick={() => {
                                             setDestinoSelecionado(index)
                                             animateReset("destinationText", "from-bottom", 200)
-                                            animateReset("destinationNums", "from-bottom", 0, 700)
+                                            animateReset("destinationNums", "from-bottom", 1, 700)
                                         }
                                         }>
                                             {element.name}
@@ -96,13 +96,13 @@ export function Destination() {
                         {windowWidht != "desktop" ? (<NameComponent className="destinationText">{ArrayDestinos[destinoSelecionado].name}</NameComponent>) : ("")}
                         <DescripitionComponent className="destinationText"><p class="md:text-end">{ArrayDestinos[destinoSelecionado].descipition}</p></DescripitionComponent>
                         {windowWidht != "desktop" ? <span class="destinationText h-1 w-10/12 my-4 bg-neutral-300/10 rounded-lg"></span> : ""}
-                        <ul class="flex flex-row gap-6 mb-12 md:mb-0  ">
-                            <li class="destinationNums flex flex-col justify-center items-center md:justify-center md:items-end">
+                        <ul class="destinationNums flex flex-row gap-6 mb-12 md:mb-0  ">
+                            <li class=" flex flex-col justify-center items-center md:justify-center md:items-end">
                                 <h4 class="text-sm text-slate-400 md:text-md  ">Avg. Distance</h4>
                                 <h2 class=" text-2xl text-neutral-300 md:text-3xl">{ArrayDestinos[destinoSelecionado].distance} {ArrayDestinos[0].distanceMeasure}</h2>
                             </li>
 
-                            <li class="destinationNums flex flex-col justify-center items-center md:justify-center md:items-end">
+                            <li class=" flex flex-col justify-center items-center md:justify-center md:items-end">
                                 <h4 class="text-sm text-slate-400 md:text-md  ">Est. Travel Time</h4>
                                 <h2 class=" text-2xl text-neutral-300 md:text-3xl">{ArrayDestinos[destinoSelecionado].travelTimeNum} {ArrayDestinos[0].travelTimeMeasure}</h2>
                             </li>
