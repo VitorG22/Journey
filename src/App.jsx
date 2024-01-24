@@ -46,12 +46,11 @@ function App() {
   return (
     <AppContext.Provider value={{ setPageSelected, pageSelected, windowWidht }}>
       <Background backgroundURL={Pages[pageSelected].background[windowWidht]} >
-        {/* <Modal idDoModal="alertModal">
-          <NameComponent>Hello!</NameComponent>
-          <DescripitionComponent><span class='text-amber-300 font-semibold'>This page is still in the process of being created</span>, <span class='text-red-400 font-semibold'>errors</span> or <span class='text-red-400 font-semibold'>bugs </span>may occur</DescripitionComponent>
-          <DescripitionComponent>It is advisable to view the page in <span class='text-sky-300 font-semibold'>Mobile devices</span>, because its Desktop version has not yet been implemented </DescripitionComponent>
-          <DescripitionComponent><span class='text-sky-300 font-semibold'>Have a great journey!</span></DescripitionComponent>
-        </Modal> */}
+        <Modal idDoModal="alertModal">
+          <div class="text-3xl text-neutral-300 font-bold">Hello!</div>
+          <DescripitionComponent><div class="text-center"><span class='text-amber-300 font-semibold '>This page is still in the process of being created</span>, <span class='text-red-400 font-semibold'>errors</span> or <span class='text-red-400 font-semibold'>bugs </span>may occur</div></DescripitionComponent>
+          <DescripitionComponent><span class='text-sky-300 font-semibold text-center'>Have a great journey!</span></DescripitionComponent>
+        </Modal>
         <Header />
         {Pages[pageSelected].page}
       </Background>

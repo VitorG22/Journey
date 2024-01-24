@@ -99,12 +99,12 @@ export function Destination() {
                         <ul class="destinationNums flex flex-row gap-6 mb-12 md:mb-0  ">
                             <li class=" flex flex-col justify-center items-center md:justify-center md:items-end">
                                 <h4 class="text-sm text-slate-400 md:text-md  ">Avg. Distance</h4>
-                                <h2 class=" text-2xl text-neutral-300 md:text-3xl">{ArrayDestinos[destinoSelecionado].distance} {ArrayDestinos[0].distanceMeasure}</h2>
+                                <h2 class=" text-2xl text-neutral-300 md:text-3xl">{ArrayDestinos[destinoSelecionado].distance} {ArrayDestinos[destinoSelecionado].distanceMeasure}</h2>
                             </li>
 
                             <li class=" flex flex-col justify-center items-center md:justify-center md:items-end">
                                 <h4 class="text-sm text-slate-400 md:text-md  ">Est. Travel Time</h4>
-                                <h2 class=" text-2xl text-neutral-300 md:text-3xl">{ArrayDestinos[destinoSelecionado].travelTimeNum} {ArrayDestinos[0].travelTimeMeasure}</h2>
+                                <h2 class=" text-2xl text-neutral-300 md:text-3xl">{ArrayDestinos[destinoSelecionado].travelTimeNum} {ArrayDestinos[destinoSelecionado].travelTimeMeasure}</h2>
                             </li>
                         </ul>
                         {windowWidht == "desktop" ? (
